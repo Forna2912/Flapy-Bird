@@ -1,11 +1,12 @@
 import pygame
 import random
+import os
 
 TELA_LARGURA = 500
 TELA_ALTURA = 800
-IMAGEM_CANO = pygame.transform.scale2x(pygame.image.load("imgs/pipe.png"))
-IMAGEM_CHAO = pygame.transform.scale2x(pygame.image.load("imgs/base.png"))
-IMAGEM_BACKGROUND = pygame.transform.scale2x(pygame.image.load("imgs/bg.png"))
+IMAGEM_CANO = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","pipe.png")))
+IMAGEM_CHAO = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","base.png")))
+IMAGEM_BACKGROUND = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","bg.png")))
 IMAGENS_PASSARO = [
     pygame.transform.scale2x(pygame.image.load("imgs/bird1.png")),
     pygame.transform.scale2x(pygame.image.load("imgs/bird2.png")),
